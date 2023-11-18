@@ -43,13 +43,12 @@ ul li a {
     width:40%;
 }
 .side_img{
-    width: 40%;
+    width: 50%;
 }
 .header_1{
     display: flex;
     justify-content: center;
     gap:5px;
-
 }
 #info{
     font-size:36px;
@@ -137,4 +136,16 @@ blockquote p{
     color: white;
     padding:30px;
     font-size: 16px;
+}
+
+@media only screen and (max-width:700px){
+    .header_1,.all_cards,.signupcard,.header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 24px;
+        }
+    }
+    
 }
